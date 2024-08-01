@@ -10,11 +10,11 @@ function listTopics() {
 function selectTopic() {
     if (randomTopic === 'HTML') {
         console.log("Let's study HTML!");
-      } else if (topic === 'CSS') {
+      } else if (randomTopic === 'CSS') {
         console.log("Let's study CSS!");
-      } else if (topic === 'Git') {
+      } else if (randomTopic === 'Git') {
         console.log("Let's study Git!");
-      } else if (topic === 'JavaScript') {
+      } else if (randomTopic === 'JavaScript') {
         console.log("Let's study JavaScript!");
       } else {
         console.log('Please try again!');
