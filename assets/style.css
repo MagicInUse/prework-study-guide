@@ -1,25 +1,56 @@
+:root {
+    --main-background-color: #5900b0;
+    --main-text-color: azure;
+}
+
 * {
     margin: 0;
     padding: 0;
+    background: black;
+    color: var(--main-text-color);
+}
+
+body {
+    background-image: url("../../BGimg.png");
+    background-position: top;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
     width: 100%;
-    height: 120px;
-    background-color: blue;
-    color: white;
+    min-width: 300px;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    padding: 10px 0px;
+}
+
+main {
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 h1, h2 {
     text-align: center;
 }
 
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
 img {
     display: block;
     height: 50px;
     width: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 ul {
@@ -32,9 +63,46 @@ p {
     font-size: 30px;
 }
 
+code {
+    font-size: 80%;
+    color:#a0a0a0;
+    background-color: rgb(31, 31, 30);
+    border: 1px solid rgb(83, 83, 81);
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
 .card {
     width: 80%;
     margin: 40px auto;
-    border: 5px solid gray;
-    box-shadow: 5px 10px #888888;
+    padding: 10px;
+    border: 5px solid rgb(44, 192, 15);
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px #114703;
+    background: black;
+}
+
+#box-model-preview[preview] {
+    position: relative;
+}
+
+#box-model-preview:hover::after {
+    content: url(https://magepow.com/blog/wp-content/uploads/2021/11/box-model-html-1024x715.png);
+    cursor: help;
+    position: absolute;
+    transform: scale(30%) translate(-117%, -215%);
+}
+
+#afterExample {
+    text-decoration: wavy underline;
+}
+
+#afterExample:hover::after {
+    visibility: visible;
+}
+
+#afterExample::after {
+    visibility: hidden;
+    content: " This element was applied to the page through CSS.";
+    color: aquamarine;
 }

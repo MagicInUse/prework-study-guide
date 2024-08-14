@@ -5,54 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Prework Study Guide</title>
+    <title>Magic's Bootcamp Study Guide</title>
   </head>
   <body>
     <header id="header">
-      <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h1>Magic's Study Guide</h1>
+      <img src="./assets/images/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <br />
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The meta element is used for multiple items (such as charset, content & viewport) to help with SEO (Search Engine Optimization).</li>
-          <li>The body element represents the visible content shown to the user.</li>
-          <li>Other HTML tags (such as header, main, section & footer) are used to structure specific items on the webpage.</li>
-          <li>The h1 tag should only be used once per page, and then numerically in order of importance (h2, h3, etc).</li>
+          <li><code>&lt;!DOCTYPE html&gt;</code> is used to open the document before the <code>&lt;html&gt;</code> tag to declare the document as an HTML document.</li>
+          <li>The <code>&lt;head&gt;</code> element contains information about the webpage.</li>
+          <li>The <code>&lt;meta&gt;</code> element is used for multiple items (such as <code>charset</code>, <code>content</code> & <code>viewport</code>) to help with SEO (Search Engine Optimization).</li>
+          <li>The <code>&lt;body&gt;</code> element represents the visible content shown to the user.</li>
+          <li>Other HTML elements (such as <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> & <code>&lt;footer&gt;</code>) are used to structure specific items on the webpage. Semantic HTML is important!</li>
+          <li>The <code>&lt;h1&gt;</code> tag should only be used once per page, and then numerically in order of importance (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc).</li>
         </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>"*" is used to apply a style to all elements.</li>
-          <li>"." is used to apply to a class.</li>
-          <li>"#" is used to apply to an id.</li>
+          <li><code>*</code> is used to apply a style to all elements.</li>
+          <li><code>.</code> is used to apply to a class.</li>
+          <li><code>#</code> is used to apply to an id.</li>
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
-          <li><a href="https://magepow.com/blog/wp-content/uploads/2021/11/box-model-html-1024x715.png">Image</a> for reference.</li>
+          <li><a href="https://magepow.com/blog/wp-content/uploads/2021/11/box-model-html-1024x715.png"><span id="box-model-preview">Image</span></a> for reference.</li>
+          <li>Pseudo-Classes are notated with a <code>:</code> following the HTML element, class or ID. E.g.: <code>a:hover</code></li>
+          <li>Pseudo-Elements are notated with a <code>::</code> and add an element to a webpage <span id="afterExample">through CSS.</span></li>
+          <li>CSS variables are declared with <code>--</code> and are usually found in the <code>:root</code> element. E.g.: <code>--main-background-color</code></li>
+          <li>Media Queries (<code>@media</code>) in CSS are used for specific device rules. There are media types (<code>screen</code>, <code>print</code>, etc...) and media features. Media queries can also utilize logic operators such as <code>and</code> and <code>or</code>.</li>
         </ul>
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status : checks what branch we are currently on.</li>
-          <li>touch file-name : creates a file, extension must be included.</li>
-          <li>git checkout -b branch-name : creates a new branch and switches to it.</li>
-          <li>git add -A : Used when we want to commit all files in the working branch, before the commit command.</li>
-          <li>git commit -m "comment" : commits to the repository, -m "comment" adds a comment to the commit.</li>
+          <li><code>git clone [url]</code> creates a new git initialized folder with all of a repository's files.</li>
+          <li><code>git init</code> initializes a folder as a git repo. We then use <code>git remote add [alias] [url]</code> to link the repo to an online database.</li>
+          <li><code>git status</code> checks what branch we are currently on and if there are discrepancies.</li>
+          <li><code>touch [file-name]</code> creates a file, extension must be included.</li>
+          <li><code>git checkout -b [branch-name]</code> creates a new branch and switches to it.</li>
+          <li><code>git add -A</code> Used when we want to commit <strong>all files</strong> in the working branch, before the commit command.</li>
+          <li><code>git add .</code> Used to add only the files in the current directory.</li>
+          <li><code>git commit -m "[comment]"</code> commits to the repository, with <code>-m "comment"</code> adding a comment to the commit.</li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
           <li>A variable is  a named container that allows us to store data in our code.</li>
-          <li>Variables that should not change use the "const" declaration.</li>
-          <li>Variables that can or should change use the "let" declaration.</li>
+          <li>Variables that should not change use the <code>const</code> declaration.</li>
+          <li>Variables that can or should change use the <code>let</code> declaration.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
-          <li>The JavaScript can be linked in the head element, in-line, or before the closing body tag depending on its usage.</li>
+          <li>The JavaScript can be linked in the <code>head</code> element, in-line, or before the closing <code>body</code> tag depending on its usage.</li>
         </ul>
       </section>
     </main>
