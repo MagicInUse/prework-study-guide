@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url("../../BGimg.png");
+    background-image: url("./../BGimg.png");
     background-position: top;
     background-repeat: repeat-y;
     display: flex;
