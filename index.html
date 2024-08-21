@@ -15,6 +15,12 @@
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
+      <section class="card" id="resources">
+        <h2>Resource Links</h2>
+        <p><span style="color:red;">WARNING</span>: There are no links back to this page! Use your browser's back button. 😊</p>
+        <a href="https://magicinuse.github.io/01-MiniProject/">Module 1 Mini-Project</a>
+        <a href="./css-cheatsheet.html">Module 2 Mini-Project</a>
+      </section>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
@@ -37,8 +43,11 @@
           <li><a href="https://magepow.com/blog/wp-content/uploads/2021/11/box-model-html-1024x715.png"><span id="box-model-preview">Image</span></a> for reference.</li>
           <li>Pseudo-Classes are notated with a <code>:</code> following the HTML element, class or ID. E.g.: <code>a:hover</code></li>
           <li>Pseudo-Elements are notated with a <code>::</code> and add an element to a webpage <span id="afterExample">through CSS.</span></li>
-          <li>CSS variables are declared with <code>--</code> and are usually found in the <code>:root</code> element. E.g.: <code>--main-background-color</code></li>
+          <li>CSS variables are declared with <code>--</code> and are usually found in the <code>:root</code> element.
+            <br>E.g.: <code>--main-background-color</code></li>
           <li>Media Queries (<code>@media</code>) in CSS are used for specific device rules. There are media types (<code>screen</code>, <code>print</code>, etc...) and media features. Media queries can also utilize logic operators such as <code>and</code> and <code>or</code>.</li>
+          <li>A designer or company's base-level custom CSS template is also known as <code>reset.css</code>.</li>
+          <li>Since design varies so much across browsers, there is also a tool called <code>normalize.css</code>.</li>
         </ul>
       </section>
       <section class="card" id="git-section">
@@ -61,11 +70,16 @@
           <li>Variables that should not change use the <code>const</code> declaration.</li>
           <li>Variables that can or should change use the <code>let</code> declaration.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
-          <li>The JavaScript can be linked in the <code>head</code> element, in-line, or before the closing <code>body</code> tag depending on its usage.</li>
+          <li>The JavaScript can be linked in the <code>&lt;head&gt;</code> element, in-line, or before the closing <code>&lt;body&gt;</code> tag depending on its usage.</li>
+          <li>Function declarations are hoisted up automatically and can be used globally.
+            <br>E.g.: <code>function myFunction() {};</code></li>
+          <li>Function expressions utilize storing a function in a variable. These are not hoisted.
+            <br>E.g.: <code>const expressedFunction = function() {};</code></li>
+          <li>Similar to a function expression, there is the Arrow function. These are usually meant for a single expression, allowing the omit of <code>return</code>.
+            <br>E.g.: <code>const arrowFunction = (x, y) => x + y;</code></li>
         </ul>
       </section>
     </main>
-
     <footer>
       <p>I can code!</p>
     </footer>

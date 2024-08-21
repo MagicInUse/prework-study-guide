@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CSS Snippet Cheatsheet</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/cheatsheet-style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>CSS Snippet Cheatsheet</h1>
+            <p>Having trouble recalling the exact syntax for your CSS code? Give it a permanent home by adding it to this page! Select any snippet below and it will automatically copy the code to your clipboard.</p>
+        </header>
+        <main>
+            <section class="card" onclick="copyCode('1')">
+                <h2 class="card-header">Flexbox Row</h2>
+                <p>Use these three properties to create a Flexbox row layout.</p>
+                <div class="code-container">
+<pre><code>
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+</code></pre>
+                </div>
+            </section>
+            <section class="card" onclick="copyCode('2')">
+                <h2 class="card-header">Flexbox Column</h2>
+                <p>Use this to create a Flexbox column layout.</p>
+                <div class="code-container">
+<pre><code>
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+                    </code></pre>
+                </div>
+            </section>
+            <section class="card" onclick="copyCode('3')">
+                <h2 class="card-header">CSS Grid Layout</h2>
+                <p>Build a 120column layout using CSS Grid</p>
+                <div class="code-container">
+<pre><code>
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+    }
+</code></pre>
+                </div>
+            </section>
+            <section class="card" onclick="copyCode('4')">
+                <h2 class="card-header">Linear Gradients</h2>
+                <p>This will create a background linear gradient from top to bottom.</p>
+                <div class="code-container">
+<pre><code id="linear-gradient">
+    .linear-gradient-background {
+        background-image: linear-gradient (
+            rgba(232, 102, 236, 0.3) 0%,
+            rgba(232, 102, 236, 0.6) 100%
+        );
+    }
+</code></pre>
+                </div>
+            </section>
+            <section class="card" onclick="copyCode('5')">
+                <h2 class="card-header">Box Transition Glow</h2>
+                <p>Use transition and box shadows to glow on hover.</p>
+                <div class="code-container">
+ <pre><code>
+    .code-card .card-header {
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    code-card:hover,
+    code-card:hover .card-header {
+        box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+        0 0 15px rgba(232, 102, 236, 1); 
+    }
+</code></pre>
+                </div>
+            </section>
+            <section class="card" onclick="copyCode('6')">
+                <h2 class="card-header">Overlay Card with Title</h2>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                <div class="code-container">
+<pre><code id="6">
+    .card-header {
+        position: relative;
+        margin-top: -20px;
+    }
+</code></pre>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h3>Made with ❤️ and CSS</h3>
+        </footer>
+        <script>
+            function copyCode(id) {
+                navigator.clipboard.writeText(document.getElementById(id).innerHTML);
+            }
+        </script>
+    </body>
+</html>

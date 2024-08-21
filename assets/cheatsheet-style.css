@@ -1,0 +1,78 @@
+:root {
+    --background-color: #333;
+    --code-background-color: #08ff08;
+    --font-color: #bbb;
+    --code-font-color: #fff;
+    --header-font-color: #21bb21;
+    --border-radius: 10px;
+    --border-width: 3px;
+}
+
+* {
+    background: var(--background-color);
+    font: 'Consolas', monospace;
+    color: var(--font-color);
+    margin: 10px auto;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 66%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+h1, h2, h3 {
+    color: var(--header-font-color);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.card {
+    border: var(--font-color) var(--border-width) dotted;
+    color: var(--header-font-color);
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin: 25px auto;
+    padding: 10px;
+}
+
+.card-header {
+    margin: -40px 20px 0px 20px;
+    padding: 10px;
+    background: var(--background-color);
+    border: var(--font-color) var(--border-width) solid;
+    border-radius: var(--border-radius);
+}
+
+pre, code {
+    color: var(--code-font-color);
+    background: rgba(0, 0, 0, 0);
+}
+
+.code-container {
+    background: linear-gradient(#444, var(--code-background-color));
+    border-radius: var(--border-radius);
+    min-width: 95%;
+}
+
+.card:hover > .code-container {
+    box-shadow: inset 0px 0px 8px var(--code-background-color),
+                0px 0px 15px var(--code-background-color);
+}
