@@ -15,7 +15,7 @@ Review the notes in each section. For suggestions on what to study first, there 
 ## Credits / References
 
 [Copy to Clipboard](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp)
-[Module 1 Mini-Project README](Mehttps://github.com/MagicInUse/01-MiniProject)
+[Module 1 Mini-Project README](https://github.com/MagicInUse/01-MiniProject)
 [Function Expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 [CSS Font](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
